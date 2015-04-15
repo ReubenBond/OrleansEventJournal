@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Console</title>
+        <script src="js/jquery-2.1.3.js"></script>
+        <script src="js/jquery.mousewheel-min.js"></script>
+        <script src="js/jquery.terminal-min.js"></script>
+        <script src="console.js"></script>
+        <link href="css/jquery.terminal.css" rel="stylesheet" />
+        <link rel="icon" href="img/favicon_16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="img/favicon_32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="img/favicon_64.png" sizes="64x64" type="image/png">
+        <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background-image: url(img/sanic.svg);
+            background-repeat: no-repeat;
+            background-color: #4c76b2;
+            -moz-background-position-x: center;
+            -o-background-position-x: center;
+            background-position-x: center;
+            -moz-background-position-y: bottom;
+            -o-background-position-y: bottom;
+            background-position-y: bottom;
+            background-attachment: fixed;
+        }
+
+        .background {
+            background-color: #000000;
+            background-color: rgba(0,0,0,0.8);
+            min-height: 100%;
+            height: auto;
+        }
+        </style>
+        <script type="html-template" id="sanic-tpl">
+            <div>
+                <!-- YOU GOTTA GO FAST! -->
+                <img src="img/header_med.png" />
+                <h1 style="color: red;">GOTTA GO FAST</h1>
+            </div>
+        </script>
+    </head>
+    <body class="background" id="terminal">
+    </body>
+</html>
