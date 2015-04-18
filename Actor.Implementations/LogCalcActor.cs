@@ -34,14 +34,6 @@ namespace Actor.Implementations
             return this.Event(() => { }, _ => _.Multiply(number), () => this.State.Value *= number);
         }
 
-        public Task<decimal> Divisde(decimal number)
-        {
-            return this.Event(
-                validate: () => { },
-                write: _ => _.Divide(number),
-                apply: () => this.State.Value /= number);
-        }
-
         /// <summary>
         /// The divide.
         /// </summary>

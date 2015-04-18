@@ -82,7 +82,7 @@
     function admin() {
         var nextEventId = 0;
         var self = this;
-        self.to = "user/" + emptyGuid;
+        self.to = "calculator/" + emptyGuid;
         self.shellFn = {};
 
         self.createEvent = function (type, args) {
